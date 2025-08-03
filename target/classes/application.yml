@@ -1,0 +1,75 @@
+server:
+  port: 8082
+
+spring:
+  profiles:
+    active: qa
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: Spring-boot-tutorial
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dcbapp
+    username: root
+    password: Praveen@217
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+welcome:
+  message: Welcome to SpringBoot tutorial. My name is Praveen and I am learning Spring boot.
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: qa
+  application:
+    name: Spring-boot-tutorial
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dcbapp-qa
+    username: root
+    password: Praveen@217
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+welcome:
+  message: Welcome to SpringBoot tutorial. My name is Praveen and I am learning Spring boot.
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  application:
+    name: Spring-boot-tutorial
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dcbapp-prod
+    username: root
+    password: Praveen@217
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+welcome:
+  message: Welcome to SpringBoot tutorial. My name is Praveen and I am learning Spring boot.
