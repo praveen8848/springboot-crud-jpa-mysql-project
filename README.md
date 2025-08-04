@@ -5,21 +5,6 @@ including REST API creation, database integration (H2 & MySQL), validation, logg
 
 ---
 
-## 📚 Table of Contents
-1. [Overview](#overview)
-2. [Technologies Used](#technologies-used)
-3. [Features](#features)
-4. [Project Structure](#project-structure)
-5. [Setup and Installation](#setup-and-installation)
-6. [Usage](#usage)
-7. [Testing](#testing)
-8. [Profiles](#profiles)
-9. [Actuator Endpoints](#actuator-endpoints)
-10. [Logging](#logging)
-11. [License](#license)
-
----
-
 ## 📌 Overview
 This application demonstrates:
 - Building REST APIs using Spring Boot
