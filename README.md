@@ -19,7 +19,7 @@ This application demonstrates:
 ---
 
 ## 💻 Technologies Used
-- **Java 21 / Java 17 / Java 8** (Compatible)
+- **Java 21
 - **Spring Boot** (Core, Web, JPA, Validation, Actuator)
 - **H2 Database** (In-memory)
 - **MySQL** (Persistent DB)
